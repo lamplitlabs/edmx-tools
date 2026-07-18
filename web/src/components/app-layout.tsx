@@ -174,6 +174,7 @@ export function AppLayout() {
               <h4 className="text-sm font-semibold">Connect</h4>
               <div className="flex items-center gap-1">
                 <IconLink href="https://github.com/lamplitlabs/edmx-tools" tooltip="GitHub"><GitHubIcon className="h-4 w-4" /></IconLink>
+                <IconLink href="https://x.com/lamplitlabs" tooltip="X"><X className="h-4 w-4" /></IconLink>
                 <IconLink href="https://www.lamplitlabs.com" tooltip="Lamplit Labs"><Globe className="h-4 w-4" /></IconLink>
                 <IconLink href="https://blogs.lamplitlabs.com" tooltip="Blog"><BookOpen className="h-4 w-4" /></IconLink>
               </div>
