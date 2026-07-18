@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, Outlet } from "react-router-dom";
-import { Moon, Sun, Menu, X, Heart, Globe, BookOpen, Share2 } from "lucide-react";
+import { Moon, Sun, Menu, X, Globe, BookOpen } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useTheme } from "@/hooks/use-theme";
 import { cn } from "@/lib/utils";
@@ -72,7 +72,7 @@ export function AppLayout() {
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
-            <img src="/favicons/android-chrome-192x192.png" alt="Logo" className="h-7 w-7 dark:invert dark:brightness-90" />
+            <img src="/favicons/android-chrome-192x192.png" alt="Lamplit Labs logo" className="h-7 w-7" />
             <span className="font-semibold text-sm tracking-tight">EDMX Tools</span>
           </Link>
 
@@ -149,7 +149,7 @@ export function AppLayout() {
             {/* Brand */}
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <img src="/favicons/android-chrome-192x192.png" alt="Logo" className="h-7 w-7 dark:invert dark:brightness-90" />
+                <img src="/favicons/android-chrome-192x192.png" alt="Lamplit Labs logo" className="h-7 w-7" />
                 <span className="font-semibold text-sm">EDMX Tools</span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
@@ -173,17 +173,15 @@ export function AppLayout() {
             <div className="space-y-3">
               <h4 className="text-sm font-semibold">Connect</h4>
               <div className="flex items-center gap-1">
-                <IconLink href="https://github.com/bitesinbyte/edmx-tools" tooltip="GitHub"><GitHubIcon className="h-4 w-4" /></IconLink>
-                <IconLink href="https://www.bitesinbyte.com" tooltip="Website"><Globe className="h-4 w-4" /></IconLink>
-                <IconLink href="https://blogs.bitesinbyte.com" tooltip="Blog"><BookOpen className="h-4 w-4" /></IconLink>
-                <IconLink href="https://links.bitesinbyte.com" tooltip="Links"><Share2 className="h-4 w-4" /></IconLink>
-                <IconLink href="https://ko-fi.com/bitesinbyte" tooltip="Support"><Heart className="h-4 w-4" /></IconLink>
+                <IconLink href="https://github.com/lamplitlabs/edmx-tools" tooltip="GitHub"><GitHubIcon className="h-4 w-4" /></IconLink>
+                <IconLink href="https://www.lamplitlabs.com" tooltip="Lamplit Labs"><Globe className="h-4 w-4" /></IconLink>
+                <IconLink href="https://blogs.lamplitlabs.com" tooltip="Blog"><BookOpen className="h-4 w-4" /></IconLink>
               </div>
             </div>
           </div>
 
           <div className="mt-8 border-t border-border/50 pt-6 flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
-            <span>&copy; {new Date().getFullYear()} <strong className="text-foreground/70">bitesinbyte.com</strong> | <a href="https://github.com/bitesinbyte/edmx-tools/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">MIT License</a></span>
+            <span>&copy; {new Date().getFullYear()} <strong className="text-foreground/70">Lamplit Labs</strong> | <a href="https://github.com/lamplitlabs/edmx-tools/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">MIT License</a></span>
             <span>Thanks to <a href="https://github.com/shashisadasivan" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-foreground transition-colors">shashisadasivan</a> for EDMXTrimmer inspiration</span>
           </div>
         </div>

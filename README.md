@@ -2,7 +2,7 @@
 
 A collection of client-side tools for working with **EDMX** (Entity Data Model XML) and **OData metadata** files. All processing happens entirely in your browser -- no data is ever sent to a server.
 
-**Live site:** [edmx.bitesinbyte.com](https://edmx.bitesinbyte.com)
+**Live site:** [edmx.lamplitlabs.com](https://edmx.lamplitlabs.com)
 
 ## Tools
 
